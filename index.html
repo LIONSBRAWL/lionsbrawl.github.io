@@ -31,6 +31,19 @@
             
             right: 10px;
         }
+        .video-container {
+            text-align: center;
+        }
+        video {
+            max-width: 100%;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+        .description {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
         .container {
             text-align: center;
             z-index: 2;
@@ -89,6 +102,17 @@
 
         <img src="cordeliusbrawl.jpg" alt="Left Image" class="image left">
         <img src="megbrawl.jpg" alt="Right Image" class="image right">
+        <div class="video-container">
+        <video controls>
+            <!-- Replace 'video.mp4' with your video file URL -->
+            <source src="LionsAdvert.mp4" type="video/mp4">
+            <source src="LionsAdvert.ogg" type="video/ogg">
+            Твій браузер не саппортить mp4,ogg
+        </video>
+        <div class="description">
+            Наш трейлер клубу!
+        </div>
+    </div>
         <div class="button-container">
             <div class="text-above">Вступай в нашу спільноту!</div>
             <button onclick="window.location.href='https://discord.gg/TSRtkT3Vys'">Join Our Discord</button>
